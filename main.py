@@ -123,7 +123,7 @@ def get_ciba():
 def caihongpi():
     if (Whether_caihongpi!=False):
         try:
-            conn = http.client.HTTPSConnection('api.tianapi.com')  #接口域名
+            conn = http.client.HTTPSConnection('apis.tianapi.com')  #接口域名
             params = urllib.parse.urlencode({'key':tianxing_API})
             headers = {'Content-type':'application/x-www-form-urlencoded'}
             conn.request('POST','/caihongpi/index',params,headers)
